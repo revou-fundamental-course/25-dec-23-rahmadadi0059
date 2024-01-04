@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #80BCBD;
+}
+
+.calculator-container {
+    text-align: center;
+    background-color: white;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.calculator-toggle button {
+    margin: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+.calculator {
+    /* margin-top: 20px; */
+    padding: 10px;
+    /* background-image: url(/Rumus-keliling-segitiga.jpeg); */
+}
+
+input {
+    width: 80px;
+    margin: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
+}

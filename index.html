@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculator Segitiga</title>
+</head>
+<body>
+
+<div class="calculator-container">
+    <div class="calculator-toggle">
+        <button onclick="changeCalculator('luas')">Hitung Luas</button>
+        <button onclick="changeCalculator('keliling')">Hitung Keliling</button>
+        <br>
+        <img src="./image/rumus-segitiga.PNG" alt="" srcset="">
+    </div>
+
+    <div id="luasCalculator" class="calculator">
+                <h2>Hitung Luas Segitiga</h2>
+        <label for="base">Alas:</label>
+        <input type="number" id="base">
+        <label for="height">Tinggi:</label>
+        <input type="number" id="height">
+        <button onclick="calculateLuas()">Hitung</button>
+        <button onclick="resetCalculator('luas')">Reset</button>
+        <p id="luasResult">Hasil luas: </p>
+    </div>
+
+    <div id="kelilingCalculator" class="calculator" style="display: none;">
+        <h2>Hitung Keliling Segitiga</h2>
+        <label for="side1">A:</label>
+        <input type="number" id="side1">
+        <label for="side2">B:</label>
+        <input type="number" id="side2">
+        <label for="side3">C :</label>
+        <input type="number" id="side3">
+        <button onclick="calculateKeliling()">Hitung</button>
+        <button onclick="resetCalculator('keliling')">Reset</button>
+        <p id="kelilingResult">Hasil keliling: </p>
+    </div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
